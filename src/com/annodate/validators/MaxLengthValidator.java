@@ -11,6 +11,10 @@ public class MaxLengthValidator<T> implements Validator<T, MaxLength> {
 
     @Override
     public ValidationResult validate(T obj, MaxLength annotation) {
+        if( obj == null ){
+            return new ValidationResult(false,
+                    "Length must not be greater than " + annotation.value() + ". Value was null");
+        }
         boolean valid;
         if (obj instanceof Collection) {
             valid = ((Collection) obj).size() <= annotation.value();
