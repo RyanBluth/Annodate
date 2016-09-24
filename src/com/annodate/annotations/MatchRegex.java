@@ -1,7 +1,6 @@
 package com.annodate.annotations;
 
-
-import com.annodate.validators.MinLengthValidator;
+import com.annodate.validators.RegexValidator;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -10,8 +9,9 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME )
 @Target( ElementType.FIELD )
-@Validators({MinLengthValidator.class})
-public @interface MinLength {
+@Validators({RegexValidator.class})
+public @interface MatchRegex {
 
-    int value() default 0;
+    String value();
+
 }
