@@ -15,7 +15,7 @@ Annodate aims to be a simple object validator throught the use of annotations.
 | @OneOf        | Validates that the string representation of the object matches one of the provided values|
 | @MatchPattern | Validates that the string representation of the object matches the provided pattern. |
 
-###MatchPattern Tokens 
+###MatchPattern Default Tokens 
 | Character | Matches                |
 |-----------|------------------------|
 | #         | Numeric                |
