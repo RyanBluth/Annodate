@@ -19,4 +19,8 @@ public class ValidationResult {
     public boolean isValid() {
         return valid;
     }
+
+    protected void setReason( String reason ){
+        this.reason = reason;
+    }
 }
