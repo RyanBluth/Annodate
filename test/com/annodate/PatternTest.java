@@ -27,6 +27,9 @@ public class PatternTest {
         @MatchPattern("aA##$@@--#")
         String invalid1 = "TE34!aA--1";
 
+        @MatchPattern("(###) ###-####")
+        String phone = "(222) 123-1234";
+
     }
 
     @Test
