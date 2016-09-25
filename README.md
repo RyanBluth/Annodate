@@ -12,6 +12,7 @@ Annodate aims to be a simple object validator throught the use of annotations.
 | @MinLength    | Validates that the object does not have a length less than the value provided. Collections, Strings and Arrays are supported              |
 | @Email        | Validates that the string representation of the object is a valid email address                                                           |
 | @MatchRegex   | Validates that the string representation of the object matches the provided regex value                                                   |
+| @OneOf        | Validates that the string representation of the object matches one of the provided values|
 | @MatchPattern | Validates that the string representation of the object matches the provided pattern. |
 
 ###MatchPattern Tokens 
