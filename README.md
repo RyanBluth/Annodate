@@ -50,6 +50,6 @@ public static void main(String[] args) {
   Example ex = new Example();
   ex.setUserName( "user" );
   ex.setPassword( "12345678910" );
-  List<AnnodateError) errors = Annodate.validate( ex );
+  List<AnnodateError> errors = Annodate.validate( ex );
   // errors will have the validation errors for name and for username
 }
