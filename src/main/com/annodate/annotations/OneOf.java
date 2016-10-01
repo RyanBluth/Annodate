@@ -1,7 +1,6 @@
 package com.annodate.annotations;
 
 
-import com.annodate.validators.NotNullValidator;
 import com.annodate.validators.OneOfValidator;
 
 import java.lang.annotation.ElementType;
