@@ -37,7 +37,7 @@ public class Annodate {
 
     @SuppressWarnings({"unchecked"})
     public static List<AnnodateError> validate(Object instance, AnnodateValidatorProvider... providers) {
-        List<AnnodateValidatorProvider> lProviderList = Arrays.asList( providers );
+        List<AnnodateValidatorProvider> lProviderList = new ArrayList<>( providers.length + 1 );
         lProviderList.add( 0, defaultValidatorProvider);
         List<AnnodateError> errors = new ArrayList<>();
         Field[] fields = instance.getClass().getDeclaredFields();

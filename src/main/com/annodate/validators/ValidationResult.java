@@ -52,4 +52,12 @@ public class ValidationResult {
     public void setFieldName(String fieldName) {
         this.fieldName = fieldName;
     }
+
+    public static ValidationResult valid() {
+        return new ValidationResult(true, null);
+    }
+
+    public static ValidationResult invalid( String error ) {
+        return new ValidationResult(false, error);
+    }
 }
